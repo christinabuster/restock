@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  item_name: MyString
+  description: MyString
+  current_quantity: 1
+  msrp: 9.99
+  wsp: 9.99
+  sku: MyString
+
+two:
+  item_name: MyString
+  description: MyString
+  current_quantity: 1
+  msrp: 9.99
+  wsp: 9.99
+  sku: MyString
