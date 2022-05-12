@@ -3,9 +3,9 @@ class CreateItems < ActiveRecord::Migration[7.0]
     create_table :items do |t|
       t.string :item_name
       t.string :description
-      t.integer :current_quantity
-      t.decimal :msrp
-      t.decimal :wsp
+      t.integer :quantity
+      t.integer :msrp
+      t.integer :wsp
       t.string :sku
 
       t.timestamps

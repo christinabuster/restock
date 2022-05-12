@@ -17,9 +17,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_12_010254) do
   create_table "items", force: :cascade do |t|
     t.string "item_name"
     t.string "description"
-    t.integer "current_quantity"
-    t.decimal "msrp"
-    t.decimal "wsp"
+    t.integer "quantity"
+    t.integer "msrp"
+    t.integer "wsp"
     t.string "sku"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
