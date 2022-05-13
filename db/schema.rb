@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_12_010254) do
   create_table "items", force: :cascade do |t|
     t.string "item_name"
     t.string "description"
-    t.integer "quantity"
+    t.integer "quantity", default: 0, null: false
     t.integer "msrp"
     t.integer "wsp"
     t.string "sku"
