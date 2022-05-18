@@ -14,16 +14,22 @@ How to use this app:
 
 5. After clicking submit the item is saved to a specific warehouse location.
 
+6. In your terminal or consol run $ rails c to test with irb then run $ Item.all you will see a list of the items you created with the warehouse_id number that you assigned it to.  
+
 
 Future feature implementations will be:
 
-1. Adding incoming wholesale orders to update inventory when new shipments arrive and outgoing orders/customer purchases.
+1. Add Test coverage and continue the remainder of development using TDD.
 
-2. Create low inventory alerts for when inventory is getting close to selling out.
+2. Create CSV import and export functionality
 
-3. Create purchase orders when a user gets a low inventory alert.
+2. Adding incoming wholesale orders to update inventory when new shipments arrive and outgoing orders/customer purchases.
 
-4. Create a product report feature to see how fast inventory moves and how much each item grosses in a period of time. 
+3. Create low inventory alerts for when inventory is getting close to selling out.
+
+4. Create purchase orders when a user gets a low inventory alert.
+
+5. Create a product report feature to see how fast inventory moves and how much each item grosses in a period of time. 
 
 Setup:
 
@@ -40,3 +46,4 @@ yarn install
 rails db:migrate
 
 rails s
+
