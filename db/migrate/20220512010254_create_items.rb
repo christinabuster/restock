@@ -7,6 +7,7 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.integer :msrp
       t.integer :wsp
       t.string :sku
+      t.integer :warehouse_id
 
       t.timestamps
     end

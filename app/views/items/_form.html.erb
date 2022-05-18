@@ -40,7 +40,12 @@
     <%= form.label :sku, style: "display: block" %>
     <%= form.text_field :sku %>
   </div>
-  </br>
+
+  <div>
+    <%= form.label :warehouse, style: "display: block" %>
+    <%= collection_select(:item, :warehouse_id, @warehouses, :id, :name, {:prompt => true}) %>
+  </div>
+
   <div>
     <%= form.submit %>
   </div>

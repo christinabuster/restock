@@ -6,7 +6,7 @@ class WarehousesController < ApplicationController
     @warehouses = Warehouse.all
   end
 
-  # GET /warehouses/1 or /warehouses/1.json
+  # create stock_item action to show connection of items to warehouses
   def show
   end
 

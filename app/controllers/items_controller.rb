@@ -1,27 +1,29 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: %i[ show edit update destroy ]
 
-  # GET /items or /items.json
+  # list all items
   def index
     @items = Item.all
   end
 
-  # GET /items/1 or /items/1.json
   def show
+    @warehouses = Warehouse.all
   end
 
-  # GET /items/new
+
   def new
     @item = Item.new
+    @warehouses = Warehouse.all
   end
 
-  # GET /items/1/edit
   def edit
+    @warehouses = Warehouse.all
   end
 
   # POST /items or /items.json
   def create
     @item = Item.new(item_params)
+    @warehouses = Warehouse.all
 
     respond_to do |format|
       if @item.save
@@ -65,6 +67,6 @@ class ItemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def item_params
-      params.require(:item).permit(:item_name, :description, :quantity, :msrp, :wsp, :sku)
+      params.require(:item).permit(:item_name, :description, :quantity, :msrp, :wsp, :sku, :warehouse_id)
     end
 end

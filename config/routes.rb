@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :warehouses
   resources :items
 
-  root "items#index"
+  root "warehouses#index"
 
-  get "/items", to: "items#index"
+  get "/warehouses", to: "warehouses#index"
 end
