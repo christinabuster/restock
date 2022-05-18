@@ -17,13 +17,13 @@ How to use this app:
 
 Future feature implementations will be:
 
-1. Adding incoming wholesale orders to update inventory when new shipment arrive and outgoing orders/customer purchases.
+1. Adding incoming wholesale orders to update inventory when new shipments arrive and outgoing orders/customer purchases.
 
 2. Create low inventory alerts for when inventory is getting close to selling out.
 
 3. Create purchase orders when a user gets a low inventory alert.
 
-4. Creating a product reports feature to see how fast inventory moves and how much each item grosses in a period of time. 
+4. Create a product report feature to see how fast inventory moves and how much each item grosses in a period of time. 
 
 Setup:
 
