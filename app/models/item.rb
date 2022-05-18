@@ -1,6 +1,5 @@
 class Item < ApplicationRecord
-  has_many :shipments
-  #has_many :shipments, through: :inventories
+  belongs_to :warehouse
 
   validates :item_name, presence: true
   validates :sku, presence: true, uniqueness: true, length: { maximum: 15 }
