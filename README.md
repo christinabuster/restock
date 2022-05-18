@@ -10,7 +10,7 @@ How to use this app:
 
 3. After creating a warehouse click on new item at the bottom of the page.
 
-4. Fill out the new item form. The last field is a drop down that allows the user to select a warehouse location. For
+4. Fill out the new item form. The last field is a drop down that allows the user to select a warehouse location. 
 
 5. After clicking submit the item is saved to a specific warehouse location.
 
