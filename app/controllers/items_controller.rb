@@ -7,7 +7,8 @@ class ItemsController < ApplicationController
   end
 
   def show
-    @warehouses = Warehouse.all
+    @itemes = Item.find(params[:id])
+    @name = @item.warehouse.name
   end
 
 
