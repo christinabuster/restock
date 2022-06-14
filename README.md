@@ -1,5 +1,5 @@
 # README
-This is a system that can be used for tracking inventory and warehouses. A user can have many warehouses and keep track of all their inventory for each warehouse location. For my project I have started the beginning of an inventory template application that can be used for any business in need of digital organization.
+This is a system that can be used for tracking inventory and warehouses. It was created for the Shopify intern challenge. A user can have many warehouses and keep track of all their inventory for each warehouse location. For my project I have started the beginning of an inventory template application that can be used for any business in need of digital organization.
 
 How to use this app:
 
