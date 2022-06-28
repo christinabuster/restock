@@ -2,6 +2,7 @@ class WarehousesController < ApplicationController
   before_action :set_warehouse, only: %i[ show edit update destroy ]
 
   # GET /warehouses or /warehouses.json
+  
   def index
     @warehouses = Warehouse.all
   end

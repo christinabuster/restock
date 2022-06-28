@@ -6,6 +6,7 @@ class ItemsController < ApplicationController
     @items = Item.all
   end
 
+  # find and show a specific item by id 
   def show
     @itemes = Item.find(params[:id])
     @name = @item.warehouse.name
