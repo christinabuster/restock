@@ -7,7 +7,8 @@ class WarehousesController < ApplicationController
     @warehouses = Warehouse.all
   end
 
-  # find and show a specific warehouse by id 
+  # find and show a specific warehouse by id, the show action calls Warehouse.find
+  # and stored in the instance variable @warehouses
   def show
     @warehouses = Warehouse.find(params[:id])
   end
