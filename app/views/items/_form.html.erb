@@ -1,3 +1,6 @@
+<! The form_with helper method instantiates a form builder. The form_with block calls methods
+label and text_field on the form builder to output the appropriate form elements. >
+
 <%= form_with(model: item) do |form| %>
   <% if item.errors.any? %>
     <div style="color: red">
