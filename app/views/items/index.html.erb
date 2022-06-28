@@ -1,3 +1,4 @@
+<! List of all items, link to create new item, create new warehouse, and show each item >
 <p style="color: green"><%= notice %></p>
 
 <h1>Inventory</h1>
@@ -9,7 +10,7 @@
   <p>
      <%= link_to "Create new warehouse", new_warehouse_path %>
   </p>
-
+<! List of all items >
   <div id="items">
     <% @items.each do |item| %>
       <%= render item %>

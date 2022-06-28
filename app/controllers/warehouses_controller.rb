@@ -2,12 +2,15 @@ class WarehousesController < ApplicationController
   before_action :set_warehouse, only: %i[ show edit update destroy ]
 
   # GET /warehouses or /warehouses.json
+  # fetch all warehouses from the database
   def index
     @warehouses = Warehouse.all
   end
 
-  # create stock_item action to show connection of items to warehouses
+  # find and show a specific warehouse by id, the show action calls Warehouse.find
+  # and stored in the instance variable @warehouses
   def show
+    @warehouses = Warehouse.find(params[:id])
   end
 
   # GET /warehouses/new

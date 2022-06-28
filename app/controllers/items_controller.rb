@@ -1,17 +1,19 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: %i[ show edit update destroy ]
 
-  # list all items
+  # fetch all items from the database
   def index
     @items = Item.all
   end
 
+  # find and show a specific item by id
   def show
     @itemes = Item.find(params[:id])
     @name = @item.warehouse.name
   end
 
-
+  # The new action instantiates a new item, but does not save it.
+  # also provides a list of warehouses to link items to warehouse
   def new
     @item = Item.new
     @warehouses = Warehouse.all
@@ -22,6 +24,7 @@ class ItemsController < ApplicationController
   end
 
   # POST /items or /items.json
+  # Save the item and selected warehouse to the database
   def create
     @item = Item.new(item_params)
     @warehouses = Warehouse.all
